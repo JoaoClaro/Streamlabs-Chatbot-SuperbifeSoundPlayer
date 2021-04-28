@@ -1,0 +1,99 @@
+{
+  "output_file": "Settings/settings.json",
+  "OnlyLive": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Stream must be live",
+    "tooltip": "If enabled the command will only work while the stream is live",
+    "group": "General"
+  },
+  "SoundListCommand": {
+    "type": "textbox",
+    "value": "!sounds",
+    "label": "Sound List command",
+    "tooltip": "The command to list all available sound words",
+    "group": "General"
+  },
+  "SoundListSeparator": {
+    "type": "textbox",
+    "value": " / ",
+    "label": "Sound List Separator",
+    "tooltip": "The separator that will be used for Sound list command.",
+    "group": "General"
+  },
+  "SoundListMsg": {
+    "type": "textbox",
+    "value": "[Available sounds]: {0}",
+    "label": "Sound List Message",
+    "tooltip": "Message that shows all available sounds.\r\n {0} = Sound List, required",
+    "group": "General"
+  },
+  "Volume": {
+    "type": "slider",
+    "label": "Volume",
+    "value": 50,
+    "min": 1,
+    "max": 100,
+    "ticks": 1,
+    "tooltip": "Volume used for the sounds",
+    "group": "General"
+  },
+  "UseCD": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Use Cooldown",
+    "tooltip": "If enabled the sounds will have cooldown",
+    "group": "Cooldown"
+  },
+  "StreamerIgnoreCD": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Streamer ignores cooldown",
+    "tooltip": "If enabled the sounds cooldown for streamer will be ignored",
+    "group": "Cooldown"
+  },
+  "GlobalCooldown": {
+    "type": "numberbox",
+    "label": "Global Cooldown (seconds)",
+    "value": 30,
+    "tooltip": "Global Cooldown in seconds",
+    "group": "Cooldown"
+  },
+  "GlobalCooldownMsg": {
+    "type": "textbox",
+    "value": "{0} the command is still on cooldown for {1} seconds!",
+    "label": "Cooldown Response",
+    "tooltip": "The message that the bot will display when the command is on global cooldown. \r\n {0} = user and \r\n {1} = time remaining, both are required",
+    "group": "Cooldown"
+  },
+  "UserCooldown": {
+    "type": "numberbox",
+    "label": "User Cooldown (seconds)",
+    "value": 30,
+    "tooltip": "User cooldown in seconds",
+    "group": "Cooldown"
+  },
+  "UserCooldownMsg": {
+    "type": "textbox",
+    "value": "{0} the command is still on user cooldown for {1} seconds!",
+    "label": "User Cooldown Response",
+    "tooltip": "The message that the bot will display when the command is on user cooldown. \r\n {0} = user and \r\n {1} = time remaining, both are required",
+    "group": "Cooldown"
+  },
+  "BtnOpenSoundFolder": {
+    "type": "button",
+    "label": "Open Sounds Folder",
+    "tooltip": "Opens the sounds folder",
+    "function": "OpenSoundFolder",
+    "wsevent": "",
+    "group": ""
+  },
+  "BtnDefaultSettings": {
+    "type": "button",
+    "label": "Restore Default Settings",
+    "tooltip": "Reset settings back to defaults.\r\nReload Scripts afterwards to see the changes in the user interface!",
+    "function": "SetDefaultSettings",
+    "wsevent": "",
+    "group": ""
+  }
+}
